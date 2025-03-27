@@ -24,7 +24,7 @@ module.exports = {
   // productionSourceMap: false,
   // filenameHashing: false,
   // chainWebpack: (config) => {
-  //   if (process.env.NODE_ENV === 'production') {
+  //   if (process.env.VUE_APP_NODE_ENV === 'production') {
   //     config.output.filename('js/[name].js?[contenthash:8]');
   //     config.output.chunkFilename('js/[name].js?[contenthash:8]');
   //     config.plugin('extract-css').tap(args => {

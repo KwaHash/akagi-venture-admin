@@ -227,7 +227,7 @@ export default {
    */
   getStripePubKey() {
     let STRIPE_PUB_KEY = null;
-    switch (process.env.NODE_ENV) {
+    switch (process.env.VUE_APP_NODE_ENV) {
       case 'production':
         STRIPE_PUB_KEY = process.env.VUE_APP_STRIPE_PUBLIC_KEY_PROD;
         break;
