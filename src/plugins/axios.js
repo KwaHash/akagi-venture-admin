@@ -6,7 +6,7 @@ import axios from 'axios';
 let baseURL = process.env.VUE_APP_APIBASE;
 let Authorization = process.env.VUE_APP_TOKEN;
 // 環境変数の切り替え
-switch (process.env.NODE_ENV) {
+switch (process.env.VUE_APP_NODE_ENV) {
   case 'development':
     Authorization = process.env.VUE_APP_DEV_TOKEN;
     baseURL = process.env.VUE_APP_DEV_APIBASE;

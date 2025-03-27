@@ -8,8 +8,8 @@ module.exports = {
     parser: 'babel-eslint',
   },
   rules: {
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.VUE_APP_NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-console': process.env.VUE_APP_NODE_ENV === 'production' ? 'warn' : 'off',
     'no-alert': 0,
     'max-len': 0,
     'no-param-reassign': ['error', { props: false }],
