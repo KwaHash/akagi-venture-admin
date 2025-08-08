@@ -535,7 +535,7 @@ export default {
         type: this.upload.page,
         site: this.upload.site,
         external_link: this.upload.linkBlank ? 1 : 0,
-        publish_date: DateTime.local().toISO(), // backendでpublish_dateを設定しようとしたらオブジェクトで出力されDB登録エラーになったのでフロントにて対応
+        publish_date: DateTime.local().toFormat('yyyy-MM-dd HH:mm:ss'), // backendでpublish_dateを設定しようとしたらオブジェクトで出力されDB登録エラーになったのでフロントにて対応
       };
       if (this.upload.linkBlank) data.url = this.upload.blankUrl; // 外部リンク設定にチェックがあればリンクをparamsに含む
 
@@ -587,7 +587,7 @@ export default {
         title: this.upload.title,
         content: this.upload.content,
         type: this.upload.page,
-        publish_date: DateTime.local().toISO(), // backendでpublish_dateを設定しようとしたらオブジェクトで出力されDB登録エラーになったのでフロントにて対応
+        publish_date: DateTime.local().toFormat('yyyy-MM-dd HH:mm:ss'), // backendでpublish_dateを設定しようとしたらオブジェクトで出力されDB登録エラーになったのでフロントにて対応
       };
 
       const previewPage = window.open( // プレビュー用新規タブを開く
